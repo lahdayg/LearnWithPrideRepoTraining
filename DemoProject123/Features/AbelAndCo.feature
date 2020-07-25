@@ -10,4 +10,5 @@ Scenario: Add two numbers
 	When I enter my search item in the search "Brownie"
 	And I click on Search
 	And I click on Add for Brownie Tray
+	And I click on Browser
 	#Then the result should be 120 on the screen
