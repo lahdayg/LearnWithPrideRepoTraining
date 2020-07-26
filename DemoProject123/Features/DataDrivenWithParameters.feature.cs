@@ -115,6 +115,9 @@ this.ScenarioInitialize(scenarioInfo);
 #line 11
  testRunner.And("I enter password text \"PasswordSecure\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
+#line 12
+ testRunner.And("I click on sign up button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
             }
             this.ScenarioCleanup();
         }

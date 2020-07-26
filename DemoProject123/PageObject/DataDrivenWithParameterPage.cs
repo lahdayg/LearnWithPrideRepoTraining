@@ -29,6 +29,20 @@ namespace DemoProject123.PageObject
         IWebElement userLogin => driver.FindElement(By.XPath("//a[@class='nav-link ng-binding']"));
 
 
+        IWebElement emailAddress => driver.FindElement(By.XPath("//*[@id='user_email']"));
+
+        IWebElement passwordText => driver.FindElement(By.XPath("//*[@id='user_password']"));
+
+        IWebElement signIn => driver.FindElement(By.XPath("//*[@id='btn_signin']"));
+
+        IWebElement akinOladeji => driver.FindElement(By.XPath("//span[text()='Akin Oladeji']"));
+
+        IWebElement accountDetails => driver.FindElement(By.XPath("(//a[text()='Account Details'])[1]"));
+
+        IWebElement cameraIcon => driver.FindElement(By.XPath("//*[@id='bannerBtnlnk']"));
+
+        IWebElement chooseFile => driver.FindElement(By.XPath("//*[@id='image_upload_banner']"));
+
 
 
 
@@ -45,6 +59,50 @@ namespace DemoProject123.PageObject
             usernameInput.SendKeys(username + randomInt);
             //usernameInput.SendKeys(username);
         }
+
+        public void EnterEmailAddress(string email)
+        {
+           
+            emailAddress.SendKeys(email);
+        }
+
+        public void EnterPasswordText()
+        {
+
+            passwordText.SendKeys("12345");
+        }
+
+
+        public void ClickOnSignIn()
+        {
+
+            signIn.Click();
+        }
+
+        public void ClickOnAkinOladeji()
+        {
+
+            akinOladeji.Click();
+        }
+
+        public void ClickOnAccountDetails()
+        {
+
+            accountDetails.Click();
+        }
+
+        public void ClickOnCameraIcon()
+        {
+
+            cameraIcon.Click();
+        }
+
+        public void ClickOnChooseFile()
+        {
+
+            ();
+        }
+
 
         public void EnterEmail(string amala)
         {
